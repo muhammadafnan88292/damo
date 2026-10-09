@@ -252,3 +252,107 @@ body { font-family: 'Segoe UI', sans-serif; background: #f9fafb; color: #111827;
   height: 48px;
   border-radius: 50%;
 }
+/* Footer Main Section */
+.footer {
+  background: #111827; /* Dark background for contrast */
+  color: #d1d5db;
+  padding: 60px 5% 20px;
+}
+
+/* Grid Layout for Footer Columns */
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* First column wider */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #374151;
+}
+
+/* Logo Style */
+.footer-logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+/* Column Headings */
+.footer-col h4 {
+  color: white;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+/* Paragraph */
+.footer-col p {
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
+/* List Reset */
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+/* Links with Hover Transition */
+.footer-col a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+  padding-left: 4px; /* Slight movement on hover */
+}
+
+/* Social Links - Flexbox */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.social-links a {
+  width: 36px;
+  height: 36px;
+  background: #1f2937;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #4f46e5; /* Brand color on hover */
+  transform: translateY(-3px);
+}
+
+/* Bottom Copyright Area */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr; /* 2 columns on tablet */
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
